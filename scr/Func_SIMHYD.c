@@ -61,6 +61,7 @@ void Model_SIMHYD(
         *GW = *GW - *BAS;
         *RUNOFF = *BAS + *INT + *SRUN;
     } else {
+        *EXC = 0;
         *INF = 0;
         *SRUN = 0;
         *INT = 0;
